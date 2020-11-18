@@ -1,5 +1,6 @@
 buildscript {
     repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
         jcenter()
 
     }
@@ -16,6 +17,7 @@ buildscript {
 
 allprojects {
     repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
         jcenter()
         mavenLocal()
     }
@@ -29,9 +31,9 @@ task clean(type: Delete) {
 ext {
     // Sdk and tools
     minSdkVersion = 10
-    targetSdkVersion = 24
-    compileSdkVersion = 24
-    buildToolsVersion = '24.0.2'
+    targetSdkVersion = 29
+    compileSdkVersion = 29
+    buildToolsVersion = '29.0.2'
 
     // App dependencies
     supportLibraryVersion = '24.2.0'
